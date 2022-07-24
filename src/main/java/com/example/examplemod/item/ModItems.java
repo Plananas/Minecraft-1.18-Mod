@@ -14,7 +14,8 @@ public class ModItems {
 
     public static final RegistryObject<Item> NUKE = ITEMS.register( "nuke",
             () -> new Item(new Item.Properties().tab(CreativeModeTab.TAB_COMBAT)));
-
+    public static final RegistryObject<Item> TEA = ITEMS.register( "tea",
+            () -> new Item(new Item.Properties().tab(CreativeModeTab.TAB_FOOD)));
 
     public static void register(IEventBus eventBus){
         ITEMS.register(eventBus);
